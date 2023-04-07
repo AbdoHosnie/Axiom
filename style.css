@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,1000;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body,
+html {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar-brand {
+    transition: transform 0.2s ease-in-out;
+}
+
+.navbar-brand:hover {
+    transform: translateY(-4px);
+}
+
+.navbar {
+    border-bottom: 2px dashed #ffffff;
+}
+
+
+/*
+.navbar-brand.clicked {
+    transform: scale(0.9);
+  }
+  */
+
+
+.mail-icon {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: #0a0a0a;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 1px dashed #ffffff;
+    color: #ffffff;
+    transition: transform 0.2s ease-in-out;
+}
+
+.mail-icon:hover {
+    transform: translateY(-4px);
+}
+
+.mail {
+    font-size: 15px;
+    color: #5f5f5f;
+    cursor: default;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+    outline: none;
+}
+
+
+.social-links a:hover {
+    
+    border-bottom: 2px dashed #ffffff;
+    outline-offset: 2px;
+    
+}
+
+.social-links span {
+    cursor: default;
+    color: #5f5f5f;
+}
+
+
+
+@media screen and (max-width:992px){
+    .mail {
+        display: none;
+    }
+  }
